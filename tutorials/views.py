@@ -26,7 +26,7 @@ class index(APIView):
     renderer_classes = [TemplateHTMLRenderer]
     template_name = 'tutorials/index.html'
 
-    def get(self, request):
+   # def get(self, request):
         queryset = Tutorial.objects.all()
         return Response({'tutorials': queryset})
 
